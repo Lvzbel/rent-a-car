@@ -1,0 +1,32 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    font-size: inherit;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
