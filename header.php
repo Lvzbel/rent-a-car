@@ -13,18 +13,19 @@
   <header class="nav">
     <div class="container nav__container">
 
-      <a href="#" class="nav__logo">
-        <span class="nav__brand">
-          Lucero
-        </span>Rent-A-Car
-      </a>
-
-      <!-- Toggle Button -->
-      <button class="nav-toggle">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
+      <div class="nav__branding">
+        <a href="#" class="nav__logo">
+          <span class="nav__brand">
+            Lucero
+          </span>Rent-A-Car
+        </a>
+        <!-- Toggle Button -->
+        <button class="nav-toggle">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
 
       <!-- Display Main Navigation -->
       <?php 
