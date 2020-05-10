@@ -4,6 +4,8 @@
 function add_theme_scripts() {
   // Vendor CSS
   wp_enqueue_style( 'vendor_styles', get_template_directory_uri() . '/dist/vendor.css', array(), '1.0.0', 'all');
+  // Google Fonts
+  wp_enqueue_style( 'google_fonts','https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap', array(), '1.0.0', 'all');
   // Custom Styles CSS
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/dist/app.css', array('vendor_styles'), '1.0.0', 'all');
   // Cusom JavaScript
