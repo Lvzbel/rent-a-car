@@ -87,10 +87,10 @@
   }
 
   &__links ul li:not(:last-child) > a {
-    border-bottom: 1px solid $color-grey-dark;
+    border-bottom: 1px solid $color-background-dark;
 
     @include respond(md) {
-      border-right: 1px solid $color-grey-dark;
+      border-right: 1px solid $color-background-dark;
       border-bottom: 0;
     }
   }
