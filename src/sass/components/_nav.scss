@@ -1,0 +1,45 @@
+.nav {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: $color-black;
+    font-weight: 300;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  &__brand {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  &__links ul {
+    display: flex;
+  }
+
+  &__links ul li a {
+    display: block;
+    text-decoration: none;
+    color: $color-font-nav;
+    line-height: 6rem;
+    padding: 0 2rem;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__links ul li:not(:last-child) > a {
+    border-right: 1px solid $color-grey-dark;
+  }
+
+  &__links .current_page_item a {
+    color: $color-primary;
+  }
+}
