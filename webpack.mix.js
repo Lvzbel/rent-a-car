@@ -17,7 +17,7 @@ mix
   .sass("src/app.scss", "dist")
   .setPublicPath("dist")
   .browserSync({
-    proxy: "theme.test",
+    proxy: "rentacar.test",
     files: ["./**/*.php", "src/**/*.js", "src/**/*.scss"],
   });
 
