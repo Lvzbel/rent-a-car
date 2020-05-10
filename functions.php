@@ -11,4 +11,14 @@ function add_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+// Create the Menus
+function rentacar_menu()
+{
+  register_nav_menus( array(
+    'main-menu' => 'Main Menu'
+  ));
+}
+
+add_action('init', 'rentacar_menu');
+
 // Enable extra features
