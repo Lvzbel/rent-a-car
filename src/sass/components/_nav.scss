@@ -1,15 +1,23 @@
 .nav {
   &__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
   }
 
   &__logo {
+    display: block;
     color: $color-black;
     font-weight: 300;
     font-size: 2rem;
     text-decoration: none;
+    line-height: 6rem;
   }
 
   &__brand {
@@ -18,17 +26,41 @@
     font-size: 2.5rem;
   }
 
+  &__links {
+    transform: translateY(-110%);
+    transition: transform 0.3s ease-in;
+
+    @include respond(md) {
+      transform: translateY(0);
+    }
+  }
+
+  &__active {
+    transform: translateY(0);
+  }
+
   &__links ul {
     display: flex;
+    flex-direction: column;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
   }
 
   &__links ul li a {
     display: block;
     text-decoration: none;
     color: $color-font-nav;
+    width: 100vw;
+    text-align: center;
     line-height: 6rem;
     padding: 0 2rem;
     transition: color 0.2s ease-in;
+
+    @include respond(md) {
+      width: auto;
+    }
 
     &:hover {
       color: $color-primary;
@@ -36,10 +68,39 @@
   }
 
   &__links ul li:not(:last-child) > a {
-    border-right: 1px solid $color-grey-dark;
+    border-bottom: 1px solid $color-grey-dark;
+
+    @include respond(md) {
+      border-right: 1px solid $color-grey-dark;
+      border-bottom: 0;
+    }
   }
 
   &__links .current_page_item a {
     color: $color-primary;
+  }
+
+  & .nav-toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 4rem;
+    height: 3.5rem;
+    border: none;
+
+    @include respond(md) {
+      display: none;
+    }
+
+    &__bar {
+      height: 3px;
+      width: 100%;
+      background-color: $color-font-nav;
+      border-radius: 10px;
+    }
   }
 }

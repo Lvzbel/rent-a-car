@@ -19,6 +19,13 @@
         </span>Rent-A-Car
       </a>
 
+      <!-- Toggle Button -->
+      <button class="nav-toggle">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
       <!-- Display Main Navigation -->
       <?php 
           $args = array(
