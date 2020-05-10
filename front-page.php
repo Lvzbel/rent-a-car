@@ -2,9 +2,14 @@
 
 <?php while(have_posts()): the_post(); ?>
 
-<h1><?php the_title(); ?></h1>
+<section class="cta">
 
-<div><?php the_content(); ?></div>
+  <h1 class="cta__header">Lucero Rent-A-Car
+    <span class="cta__lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+  </h1>
+  <a class="btn btn-primary cta__btn" href="#">View our Inventory</a>
+
+</section>
 
 <?php endwhile; ?>
 
