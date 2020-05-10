@@ -1,0 +1,33 @@
+// Media queries are not affected by our global font size setting, they are affected by the browser setting which is 16px font size
+// em will be used instead of rem. Some browsers have problems with rems.
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    // 640px
+    @media only screen and (min-width: 40em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    // 768px
+    @media only screen and (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    // 1024px
+    @media only screen and (min-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    // 1280px
+    @media only screen and (min-width: 80em) {
+      @content;
+    }
+  }
+}
