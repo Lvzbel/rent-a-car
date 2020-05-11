@@ -57,6 +57,17 @@
   </div>
 </section>
 
+<!-- AUTO SHOWCASE -->
+<section class="showcase u-section-spacing">
+  <div class="container">
+    <div class="showcase__slider">
+      <div class="showcase__item">Text One</div>
+      <div class="showcase__item">Text Two</div>
+      <div class="showcase__item">Text Three</div>
+    </div>
+  </div>
+</section>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
