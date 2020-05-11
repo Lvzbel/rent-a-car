@@ -31,8 +31,12 @@
     margin-top: 2rem;
   }
 
+  &__btn-container {
+    font-size: 1.3rem;
+  }
+
   &__btn {
     display: block;
-    margin: 2rem 0;
+    margin: 2rem 2rem;
   }
 }
