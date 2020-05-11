@@ -33,6 +33,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
+    "bxslider": "^4.2.14",
     "sanitize.css": "^11.0.0"
   }
 }
