@@ -1,5 +1,23 @@
 .showcase {
+  background: $color-background-dark;
   &__item {
     height: 500px;
+  }
+
+  // bxSlider customization
+  & .bx-wrapper .bx-pager.bx-default-pager a {
+    background: $color-primary-light;
+  }
+
+  & .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bx-wrapper .bx-pager.bx-default-pager a.active,
+  .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: $color-primary-dark;
+  }
+
+  & .bx-wrapper {
+    background: $color-background-dark;
+    box-shadow: none;
+    border: none;
   }
 }
