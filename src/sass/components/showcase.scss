@@ -78,6 +78,15 @@
     font-size: 3.5rem;
   }
 
+  // SVG Styles
+  &__icon svg {
+    height: 3.5rem;
+  }
+
+  & .car-icons {
+    fill: $color-primary;
+  }
+
   &__option-text {
     color: $color-font-darker;
     font-weight: 300;

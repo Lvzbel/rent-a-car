@@ -103,7 +103,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <i class="las la-truck-monster"></i>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\chassis.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 4x4: No
@@ -112,10 +112,10 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <i class="las la-car"></i>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\gearshift.svg"); ?>
               </div>
               <p class="showcase__option-text">
-                Sedan
+                Automatic
               </p>
             </div>
 
@@ -134,10 +134,11 @@
         </div>
 
       </div>
+
+
     </div>
   </div>
 </section>
-
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
