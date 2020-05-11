@@ -6,6 +6,9 @@ function add_theme_scripts() {
   wp_enqueue_style( 'vendor_styles', get_template_directory_uri() . '/dist/vendor.css', array(), '1.0.0', 'all');
   // Google Fonts
   wp_enqueue_style( 'google_fonts','https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap', array(), '1.0.0', 'all');
+  // Line Awesome Icons
+  wp_enqueue_style( 'line_awesome_all','https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css', array(), '1.3.0', 'all');
+  wp_enqueue_style( 'line_awesome_min','https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css', array(), '1.3.0', 'all');
   // Custom Styles CSS
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/dist/app.css', array('vendor_styles'), '1.0.0', 'all');
   // Cusom JavaScript
