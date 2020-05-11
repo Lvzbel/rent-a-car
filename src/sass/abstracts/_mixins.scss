@@ -5,7 +5,7 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == sm {
     // 640px
-    @media only screen and (min-width: 40em) {
+    @media only screen and (max-width: 40em) {
       @content;
     }
   }
