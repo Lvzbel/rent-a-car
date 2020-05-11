@@ -1,0 +1,52 @@
+.services {
+  &__row {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__service {
+    text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid $color-background-dark;
+
+      @include respond(md) {
+        border-bottom: none;
+
+        border-right: 2px solid $color-background-dark;
+      }
+    }
+  }
+
+  &__icon-box {
+    height: 11rem;
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    border-radius: 100px;
+    border: 2px solid rgba($color-font-dark, 0.5);
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: $color-primary;
+  }
+
+  &__title {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__lead {
+    font-size: 1.4rem;
+    color: $color-font-darker;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+}
