@@ -1,9 +1,68 @@
 .showcase {
   background: $color-background-dark;
   &__item {
-    height: 500px;
   }
 
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  &__price {
+    font-size: 3.1rem;
+    font-size: $color-black;
+  }
+
+  &__perday {
+    font-size: 1.8rem;
+    color: $color-font-darker;
+  }
+
+  &__type {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 3.9rem;
+  }
+
+  &__description {
+    color: $color-font-darker;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__option {
+    flex-basis: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon i {
+    color: $color-primary;
+    font-size: 3.5rem;
+  }
+
+  &__option-text {
+    color: $color-font-darker;
+    font-weight: 300;
+    width: auto;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
   // bxSlider customization
   & .bx-wrapper .bx-pager.bx-default-pager a {
     background: $color-primary-light;

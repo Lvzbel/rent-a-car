@@ -61,9 +61,79 @@
 <section class="showcase u-section-spacing">
   <div class="container">
     <div class="showcase__slider">
-      <div class="showcase__item">Text One</div>
-      <div class="showcase__item">Text Two</div>
-      <div class="showcase__item">Text Three</div>
+      <div class="showcase__item">
+
+        <div class="showcase__auto">
+          <div class="showcase__image">
+            <img src="<?php echo get_template_directory_uri() . '/src\images\carrental2-cars-pic1.jpg' ?>" alt="">
+          </div>
+          <div class="showcase__info">
+
+            <h4 class="showcase__price">
+              $189
+              <span class="showcase__perday">
+                / day
+              </span>
+            </h4>
+            <div class="showcase__type">
+              Sedan
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase__desc">
+          <h3 class="showcase__title">
+            Maecenas
+          </h3>
+          <p class="showcase__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus assumenda similique eum
+            veniam, at non odit, dignissimos repellendus recusandae harum sed facere culpa voluptate molestiae hic
+            molestias quae unde?
+          </p>
+          <div class="showcase__options">
+
+            <div class="showcase__option">
+              <div class="showcase__icon">
+                <i class="las la-gas-pump"></i>
+              </div>
+              <p class="showcase__option-text">
+                Gasoline
+              </p>
+            </div>
+
+            <div class="showcase__option">
+              <div class="showcase__icon">
+                <i class="las la-truck-monster"></i>
+              </div>
+              <p class="showcase__option-text">
+                4x4: No
+              </p>
+            </div>
+
+            <div class="showcase__option">
+              <div class="showcase__icon">
+                <i class="las la-car"></i>
+              </div>
+              <p class="showcase__option-text">
+                Sedan
+              </p>
+            </div>
+
+            <div class="showcase__option">
+              <div class="showcase__icon">
+                <i class="las la-user-friends"></i>
+              </div>
+              <p class="showcase__option-text">
+                Passengers: 5
+              </p>
+            </div>
+          </div>
+          <div class="showcase__btn">
+            <a href="#" class="btn btn--primary">Details</a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
