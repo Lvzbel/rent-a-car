@@ -1,6 +1,26 @@
 .showcase {
   background: $color-background-dark;
   &__item {
+    @include respond(md) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__auto {
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__desc {
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+    }
   }
 
   &__info {
@@ -8,6 +28,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0;
+
+    @include respond(md) {
+      margin: 0;
+    }
   }
 
   &__price {
@@ -29,6 +53,7 @@
 
   &__title {
     font-size: 3.9rem;
+    margin-bottom: 1.5rem;
   }
 
   &__description {
