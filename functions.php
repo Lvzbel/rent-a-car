@@ -33,3 +33,7 @@ add_action('init', 'rentacar_menu');
 // Enable extra features
 // Add Featured Images
 add_theme_support( 'post-thumbnails' );
+// Reduce the_excerpt to only 20 words
+add_filter( 'excerpt_length', function($length) {
+  return 20;
+} );
