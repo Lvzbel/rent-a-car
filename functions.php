@@ -31,3 +31,5 @@ function rentacar_menu()
 add_action('init', 'rentacar_menu');
 
 // Enable extra features
+// Add Featured Images
+add_theme_support( 'post-thumbnails' );
