@@ -22,7 +22,7 @@
 
       <div class="services__service">
         <div class="services__icon-box"
-          style="background-image: url('<?php echo get_template_directory_uri() . '/src\images\stripes_background.png' ?>')">
+          style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
           <i class="las la-plane-arrival services__icon"></i></div>
         <h3 class="services__title">
           Airport Delivery
@@ -33,7 +33,7 @@
 
       <div class="services__service">
         <div class="services__icon-box"
-          style="background-image: url('<?php echo get_template_directory_uri() . '/src\images\stripes_background.png' ?>')">
+          style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
           <i class="las la-car-crash services__icon"></i></div>
         <h3 class="services__title">
           Fully Insured
@@ -44,7 +44,7 @@
 
       <div class="services__service">
         <div class="services__icon-box"
-          style="background-image: url('<?php echo get_template_directory_uri() . '/src\images\stripes_background.png' ?>')">
+          style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
           <i class="las la-car-side services__icon"></i></div>
         <h3 class="services__title">
           Clean & Reliable
@@ -65,7 +65,7 @@
 
         <div class="showcase__auto">
           <div class="showcase__image">
-            <img src="<?php echo get_template_directory_uri() . '/src\images\carrental2-cars-pic1.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/src/images/carrental2-cars-pic1.jpg' ?>" alt="">
           </div>
           <div class="showcase__info">
 
@@ -103,7 +103,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\chassis.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/chassis.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 4x4: No
@@ -112,7 +112,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\gearshift.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/gearshift.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 Automatic
@@ -139,7 +139,7 @@
 
         <div class="showcase__auto">
           <div class="showcase__image">
-            <img src="<?php echo get_template_directory_uri() . '/src\images\carrental2-cars-pic2.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/src/images/carrental2-cars-pic2.jpg' ?>" alt="">
           </div>
           <div class="showcase__info">
 
@@ -177,7 +177,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\chassis.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/chassis.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 4x4: Yes
@@ -186,7 +186,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\gearshift.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/gearshift.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 Manual
@@ -213,7 +213,7 @@
 
         <div class="showcase__auto">
           <div class="showcase__image">
-            <img src="<?php echo get_template_directory_uri() . '/src\images\carrental2-cars-pic2.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/src/images/carrental2-cars-pic2.jpg' ?>" alt="">
           </div>
           <div class="showcase__info">
 
@@ -251,7 +251,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\chassis.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/chassis.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 4x4: No
@@ -260,7 +260,7 @@
 
             <div class="showcase__option">
               <div class="showcase__icon">
-                <?php echo file_get_contents(get_template_directory_uri() . "/src\images\gearshift.svg"); ?>
+                <?php echo file_get_contents(get_template_directory_uri() . "/src/images/gearshift.svg"); ?>
               </div>
               <p class="showcase__option-text">
                 Manual
