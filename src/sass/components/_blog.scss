@@ -1,0 +1,75 @@
+.blog {
+  &__row {
+    @include respond(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__item {
+    flex-basis: calc(33% - 2rem);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+  &__img-box {
+    height: 30rem;
+    background-color: lighten($color-background-dark, 1%);
+
+    & img {
+      border-radius: 5px;
+      padding: 1rem;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: $color-black;
+  }
+
+  &__content p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: $color-font-darker;
+    line-height: 3rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lighten($color-background-dark, 2%);
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    color: $color-font-dark;
+
+    & a,
+    a:visited,
+    a:link {
+      color: $color-primary;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+    }
+
+    & a:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+  }
+
+  &__link-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
