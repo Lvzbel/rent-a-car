@@ -287,6 +287,21 @@
     </div>
   </div>
 </section>
+
+<section class="blog">
+  <div class="container">
+    <?php
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 6
+        );
+
+        $blog = new WP_Query($args);
+        while($blog->have_posts()): $blog->the_post(); ?>
+    <h1><?php the_title(); ?></h1>
+    <?php endwhile; ?>
+  </div>
+</section>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
