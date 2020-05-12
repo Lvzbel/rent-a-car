@@ -59,7 +59,7 @@
     justify-content: space-between;
     align-items: center;
     background: lighten($color-background-dark, 2%);
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.3rem;
     color: $color-font-dark;
 
@@ -78,10 +78,14 @@
 
   &__link {
     font-size: 1.4rem;
+    padding-left: 1rem;
+    line-height: 2;
+    border-left: 1px solid $color-font-dark;
   }
 
   &__link-icon {
     display: inline-block;
     margin-right: 0.5rem;
+    font-size: 1.6rem;
   }
 }
