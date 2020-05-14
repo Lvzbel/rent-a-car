@@ -6,11 +6,9 @@
   <div class="showcase__item">
 
     <div class="showcase__auto">
-      <div class="showcase__image">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail('auto_img'); ?>
-        </a>
-      </div>
+      <a class="showcase__image" href="<?php the_permalink(); ?>">
+        <?php the_post_thumbnail('auto_img'); ?>
+      </a>
       <div class="showcase__info">
 
         <h4 class="showcase__price">
