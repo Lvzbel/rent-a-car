@@ -13,7 +13,7 @@
       flex-basis: calc(50% - 3rem);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
   }
 
@@ -84,12 +84,13 @@
   }
 
   // SVG Styles
+  &__icon {
+    & .car-icons {
+      fill: $color-primary;
+    }
+  }
   &__icon svg {
     height: 3.5rem;
-  }
-
-  & .car-icons {
-    fill: $color-primary;
   }
 
   &__option-text {
