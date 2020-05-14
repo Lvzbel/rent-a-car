@@ -31,6 +31,8 @@ function rentacar_menu()
 add_action('init', 'rentacar_menu');
 
 // Enable extra features
+// Custom Image Size for Auto
+add_image_size( 'auto_img', 580, 370, true ); 
 // Add Featured Images
 add_theme_support( 'post-thumbnails' );
 // Reduce the_excerpt to only 20 words
