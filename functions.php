@@ -63,3 +63,115 @@ add_filter( 'excerpt_length', function($length) {
 	}
 
   add_action('init', 'rentacar_autos_post');
+
+  //==================================>
+  // Custom Taxonomies for Autos
+  //==================================>
+  function rentacar_autos_taxonomies()
+{
+
+  // Transmission Type
+    $labels = [
+      'name'              => _x('Transmissions', 'taxonomy general name'),
+      'singular_name'     => _x('Transmission', 'taxonomy singular name'),
+      'search_items'      => __('Search Transmissions'),
+      'all_items'         => __('All Transmissions'),
+      'parent_item'       => __('Parent Transmission'),
+      'parent_item_colon' => __('Parent Transmission:'),
+      'edit_item'         => __('Edit Transmission'),
+      'update_item'       => __('Update Transmission'),
+      'add_new_item'      => __('Add New Transmission'),
+      'new_item_name'     => __('New Transmission Name'),
+      'menu_name'         => __('Transmission'),
+      ];
+      $args = [
+      'hierarchical'      => true, // make it hierarchical (like categories)
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'show_in_quick_edit' => false,
+      'meta_box_cb'        => false,
+      'rewrite'           => ['slug' => 'transmission'],
+      ];
+      register_taxonomy('trans', ['rentacar_autos'], $args);
+
+  // Brand
+  $labels = [
+    'name'              => _x('Brands', 'taxonomy general name'),
+    'singular_name'     => _x('Brand', 'taxonomy singular name'),
+    'search_items'      => __('Search Brands'),
+    'all_items'         => __('All Brands'),
+    'parent_item'       => __('Parent Brand'),
+    'parent_item_colon' => __('Parent Brand:'),
+    'edit_item'         => __('Edit Brand'),
+    'update_item'       => __('Update Brand'),
+    'add_new_item'      => __('Add New Brand'),
+    'new_item_name'     => __('New Brand Name'),
+    'menu_name'         => __('Brand'),
+    ];
+    $args = [
+    'hierarchical'      => true, // make it hierarchical (like categories)
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'show_in_quick_edit'  => false,
+    'meta_box_cb'       => false,
+    'rewrite'           => ['slug' => 'brand'],
+    ];
+    register_taxonomy('brand', ['rentacar_autos'], $args);
+
+  // Drive Type
+  $labels = [
+    'name'              => _x('Drives', 'taxonomy general name'),
+    'singular_name'     => _x('Drive', 'taxonomy singular name'),
+    'search_items'      => __('Search Drives'),
+    'all_items'         => __('All Drives'),
+    'parent_item'       => __('Parent Drive'),
+    'parent_item_colon' => __('Parent Drive:'),
+    'edit_item'         => __('Edit Drive'),
+    'update_item'       => __('Update Drive'),
+    'add_new_item'      => __('Add New Drive'),
+    'new_item_name'     => __('New Drive Name'),
+    'menu_name'         => __('Drive'),
+    ];
+    $args = [
+    'hierarchical'      => true, // make it hierarchical (like categories)
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'show_in_quick_edit' => false,
+    'meta_box_cb'        => false,
+    'rewrite'           => ['slug' => 'drive'],
+    ];
+    register_taxonomy('drive', ['rentacar_autos'], $args);
+
+    // Car Type
+  $labels = [
+    'name'              => _x('Types', 'taxonomy general name'),
+    'singular_name'     => _x('Type', 'taxonomy singular name'),
+    'search_items'      => __('Search Types'),
+    'all_items'         => __('All Types'),
+    'parent_item'       => __('Parent Type'),
+    'parent_item_colon' => __('Parent Type:'),
+    'edit_item'         => __('Edit Type'),
+    'update_item'       => __('Update Type'),
+    'add_new_item'      => __('Add New Type'),
+    'new_item_name'     => __('New Type Name'),
+    'menu_name'         => __('Type'),
+    ];
+    $args = [
+    'hierarchical'      => true, // make it hierarchical (like categories)
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'show_in_quick_edit' => false,
+    'meta_box_cb'        => false,
+    'rewrite'           => ['slug' => 'type'],
+    ];
+    register_taxonomy('type', ['rentacar_autos'], $args);
+}
+add_action('init', 'rentacar_autos_taxonomies');
