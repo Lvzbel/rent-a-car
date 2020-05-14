@@ -17,6 +17,11 @@
     }
   }
 
+  &__image img {
+    height: auto;
+    border-radius: 2px;
+  }
+
   &__desc {
     @include respond(md) {
       flex-basis: calc(50% - 3rem);

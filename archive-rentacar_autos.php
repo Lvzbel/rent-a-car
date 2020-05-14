@@ -8,7 +8,7 @@
     <div class="showcase__auto">
       <div class="showcase__image">
         <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
+          <?php the_post_thumbnail('auto_img'); ?>
         </a>
       </div>
       <div class="showcase__info">
