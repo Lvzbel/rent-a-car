@@ -37,3 +37,29 @@ add_theme_support( 'post-thumbnails' );
 add_filter( 'excerpt_length', function($length) {
   return 20;
 } );
+
+  //==================================>
+  // Custom Auto Post
+  //==================================>
+	function rentacar_autos_post()
+	{
+		register_post_type('rentacar_autos', array(
+			'public' => true,
+			'menu_icon' => 'dashicons-dashboard',
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'autos'
+			),
+			'labels' => array(
+				'name' => 'Autos',
+				'add_new_item' => 'Add New Auto',
+				'edit_item' => 'Edit Auto',
+				'all_items' => 'All Autos',
+				'singular_name' => 'Auto',
+				'archives' => 'autos'
+			)
+		));
+	}
+
+  add_action('init', 'rentacar_autos_post');
