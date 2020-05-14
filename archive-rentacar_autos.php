@@ -1,5 +1,115 @@
 <?php get_header(); ?>
 
+<form method="GET">
+
+  <!-- Transmission Type -->
+  <div class="filter__container">
+    <?php
+
+  $terms = get_terms([
+    'taxonomy' => 'trans',
+    'hide_empty' => false
+  ]);
+
+  foreach ($terms as $term) :
+
+  ?>
+
+    <label>
+
+      <input type="checkbox" name="trans[]" value="<?php echo $term->slug; ?>" <?php checked(
+          (isset($_GET['trans']) && in_array($term->slug, $_GET['trans']))
+        ) ?> />
+
+      <?php echo $term->name; ?>
+
+    </label>
+
+    <?php endforeach; ?>
+  </div>
+
+  <!-- Brand Type -->
+  <div class="filter__container">
+    <?php
+
+  $terms = get_terms([
+    'taxonomy' => 'brand',
+    'hide_empty' => false
+  ]);
+
+  foreach ($terms as $term) :
+
+  ?>
+
+    <label>
+
+      <input type="checkbox" name="brand[]" value="<?php echo $term->slug; ?>" <?php checked(
+          (isset($_GET['brand']) && in_array($term->slug, $_GET['brand']))
+        ) ?> />
+
+      <?php echo $term->name; ?>
+
+    </label>
+
+    <?php endforeach; ?>
+  </div>
+
+  <!-- Drive Train Type -->
+  <div class="filter__container">
+    <?php
+
+  $terms = get_terms([
+    'taxonomy' => 'drive',
+    'hide_empty' => false
+  ]);
+
+  foreach ($terms as $term) :
+
+  ?>
+
+    <label>
+
+      <input type="checkbox" name="drive[]" value="<?php echo $term->slug; ?>" <?php checked(
+          (isset($_GET['drive']) && in_array($term->slug, $_GET['drive']))
+        ) ?> />
+
+      <?php echo $term->name; ?>
+
+    </label>
+
+    <?php endforeach; ?>
+  </div>
+
+  <!-- Car Type -->
+  <div class="filter__container">
+    <?php
+
+  $terms = get_terms([
+    'taxonomy' => 'type',
+    'hide_empty' => false
+  ]);
+
+  foreach ($terms as $term) :
+
+  ?>
+
+    <label>
+
+      <input type="checkbox" name="type[]" value="<?php echo $term->slug; ?>" <?php checked(
+          (isset($_GET['type']) && in_array($term->slug, $_GET['type']))
+        ) ?> />
+
+      <?php echo $term->name; ?>
+
+    </label>
+
+    <?php endforeach; ?>
+  </div>
+
+  <button class="btn btn--primary" type="submit">Apply</button>
+
+</form>
+
 <div class="container">
   <?php while(have_posts()): the_post(); ?>
 
