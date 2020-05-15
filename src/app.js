@@ -7,6 +7,12 @@ jQuery(document).ready(function($) {
       stopAutoOnClick: true,
     });
   });
+  $(document).ready(function() {
+    $(".auto__slider").bxSlider({
+      slideMargin: 6,
+      controls: false,
+    });
+  });
   // Manific Popup
   $(".gallery").each(function() {
     // the containers for all your galleries

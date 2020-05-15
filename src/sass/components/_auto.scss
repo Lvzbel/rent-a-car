@@ -1,5 +1,6 @@
 .auto {
   background: $color-background-dark;
+  padding: 5rem 0;
   &__item {
     @include respond(md) {
       display: flex;
@@ -20,6 +21,18 @@
       flex-direction: column;
       justify-content: space-evenly;
     }
+  }
+
+  &__gallery {
+    margin-top: 3rem;
+  }
+
+  &__gallery img {
+    width: 15rem;
+    height: 15rem;
+  }
+  & .gallery a {
+    width: 15rem !important;
   }
 
   &__image img {
