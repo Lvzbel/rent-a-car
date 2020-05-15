@@ -87,4 +87,6 @@
   <?php endwhile; ?>
 </div>
 
+<!-- Pagination -->
+<?php get_template_part('components/pagination') ?>
 <?php get_footer(); ?>
