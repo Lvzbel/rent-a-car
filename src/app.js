@@ -6,6 +6,14 @@ navToggleButton.addEventListener("click", () => {
   navLinks.classList.toggle("nav__active");
 });
 
+// Filer Navigation
+const filterButton = document.querySelector(".filter__btn");
+const filterForm = document.querySelector(".filter__form");
+
+filterButton.addEventListener("click", () => {
+  filterForm.classList.toggle("filter__form-hide");
+});
+
 jQuery(document).ready(function($) {
   // bxSlider
   $(document).ready(function() {
