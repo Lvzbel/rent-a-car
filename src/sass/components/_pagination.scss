@@ -1,0 +1,55 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-weight: 400;
+
+  & h2 {
+    // Hidden for screen readers
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
+  & .nav-links {
+    display: flex;
+  }
+
+  & .page-numbers {
+    display: block;
+    color: $color-white;
+    background-color: $color-primary;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in;
+    border-right: 1px solid $color-white;
+    border-radius: 2px;
+    font-size: 1.7rem;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  & .next,
+  & .prev {
+    color: $color-primary;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary-light;
+    }
+  }
+
+  & .current {
+    background-color: $color-primary-light;
+  }
+}
