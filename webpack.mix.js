@@ -18,7 +18,7 @@ mix
   .setPublicPath("dist")
   .browserSync({
     proxy: "rentacar.test",
-    files: ["./**/*.php", "src/**/*.js", "src/**/**/*.scss"],
+    files: ["./**/*.php", "src/**/*.js", "src/**/**/**/*.scss"],
   });
 
 // Full API
