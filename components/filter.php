@@ -117,7 +117,8 @@ foreach ($terms as $term) :
   </div>
 
   <div class="filter__btn-box">
-    <button class="btn btn--primary" type="submit">Apply</button>
+    <a class="btn btn--small btn--secondary" href="<?php echo site_url('/autos') ?>">Reset</a>
+    <button class="btn btn--primary btn--small" type="submit">Apply</button>
   </div>
 
 </form>
