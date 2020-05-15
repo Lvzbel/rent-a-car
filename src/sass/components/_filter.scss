@@ -1,0 +1,21 @@
+.filter {
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: pink;
+  }
+  &__form {
+    position: absolute;
+    background-color: rgba($color-white, 0.98);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
