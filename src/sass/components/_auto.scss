@@ -1,0 +1,127 @@
+.auto {
+  background: $color-background-dark;
+  &__item {
+    @include respond(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 3rem;
+      border-bottom: 2px solid $color-background-dark;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__auto {
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__image img {
+    height: auto;
+    border-radius: 2px;
+  }
+
+  &__desc {
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+
+    @include respond(md) {
+      margin: 0;
+    }
+  }
+
+  &__price {
+    font-size: 3.1rem;
+    font-size: $color-black;
+  }
+
+  &__perday {
+    font-size: 1.8rem;
+    color: $color-font-darker;
+  }
+
+  &__type {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 3.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    color: $color-font-darker;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__option {
+    flex-basis: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon i {
+    color: $color-primary;
+    font-size: 3.5rem;
+  }
+
+  // SVG Styles
+  &__icon {
+    & .car-icons {
+      fill: $color-primary;
+    }
+  }
+  &__icon svg {
+    height: 3.5rem;
+  }
+
+  &__option-text {
+    color: $color-font-darker;
+    font-weight: 300;
+    width: auto;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+  // bxSlider customization
+  & .bx-wrapper .bx-pager.bx-default-pager a {
+    background: $color-primary-light;
+  }
+
+  & .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bx-wrapper .bx-pager.bx-default-pager a.active,
+  .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: $color-primary-dark;
+  }
+
+  & .bx-wrapper {
+    background: $color-background-dark;
+    box-shadow: none;
+    border: none;
+  }
+}
