@@ -28,6 +28,35 @@ foreach ($terms as $term) :
     <?php endforeach; ?>
   </div>
 
+  <!-- Drive Train Type -->
+  <div class="filter__container">
+    <h4 class="filter__title">Drivetrain</h4>
+
+    <?php
+
+$terms = get_terms([
+'taxonomy' => 'drive',
+'hide_empty' => false
+]);
+
+foreach ($terms as $term) :
+
+?>
+
+    <label class="filter__label">
+
+      <input type="checkbox" name="drive[]" value="<?php echo $term->slug; ?>" <?php checked(
+  (isset($_GET['drive']) && in_array($term->slug, $_GET['drive']))
+) ?> />
+
+      <?php echo $term->name; ?>
+      <span class="checkmark"></span>
+
+    </label>
+
+    <?php endforeach; ?>
+  </div>
+
   <!-- Brand Type -->
   <div class="filter__container">
     <h4 class="filter__title">Brand</h4>
@@ -49,35 +78,6 @@ foreach ($terms as $term) :
 
       <input type="checkbox" name="brand[]" value="<?php echo $term->slug; ?>" <?php checked(
   (isset($_GET['brand']) && in_array($term->slug, $_GET['brand']))
-) ?> />
-
-      <?php echo $term->name; ?>
-      <span class="checkmark"></span>
-
-    </label>
-
-    <?php endforeach; ?>
-  </div>
-
-  <!-- Drive Train Type -->
-  <div class="filter__container">
-    <h4 class="filter__title">Drivetrain</h4>
-
-    <?php
-
-$terms = get_terms([
-'taxonomy' => 'drive',
-'hide_empty' => false
-]);
-
-foreach ($terms as $term) :
-
-?>
-
-    <label class="filter__label">
-
-      <input type="checkbox" name="drive[]" value="<?php echo $term->slug; ?>" <?php checked(
-  (isset($_GET['drive']) && in_array($term->slug, $_GET['drive']))
 ) ?> />
 
       <?php echo $term->name; ?>
