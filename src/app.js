@@ -7,6 +7,17 @@ jQuery(document).ready(function($) {
       stopAutoOnClick: true,
     });
   });
+  // Manific Popup
+  $(".gallery").each(function() {
+    // the containers for all your galleries
+    $(this).magnificPopup({
+      delegate: "a", // the selector for gallery item
+      type: "image",
+      gallery: {
+        enabled: true,
+      },
+    });
+  });
 });
 
 // Navigation Logic

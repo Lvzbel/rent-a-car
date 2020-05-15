@@ -13,6 +13,11 @@ function add_theme_scripts() {
   wp_enqueue_style( 'bxSlider_css', get_template_directory_uri() . '/node_modules/bxslider/dist/jquery.bxslider.css', array(), '4.2.14', 'all');
   // bxSlider Script
   wp_enqueue_script( 'bxSlider_script', get_template_directory_uri() . '/node_modules/bxslider/dist/jquery.bxslider.min.js', array ('jquery'), '4.2.14', true);
+
+  // Magnific Popup
+  wp_enqueue_style( 'magnific_css', get_template_directory_uri() . '/node_modules/magnific-popup/dist/magnific-popup.css', array(), '1.1.0', 'all');
+  wp_enqueue_script( 'manific_script', get_template_directory_uri() . '/node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', array ('jquery'), '1.1.0', true);
+
   // Custom Styles CSS
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/dist/app.css', array('vendor_styles'), '1.0.0', 'all');
   // Cusom JavaScript
