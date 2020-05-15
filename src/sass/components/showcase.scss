@@ -4,7 +4,12 @@
     @include respond(md) {
       display: flex;
       justify-content: space-between;
+    }
+
+    &:not(:last-child) {
       padding-bottom: 3rem;
+      border-bottom: 2px solid $color-background-dark;
+      margin-bottom: 3rem;
     }
   }
 
