@@ -3,8 +3,8 @@
 <div class="container">
   <div class="filter">
     <div class="filter__bar">
-      <h4>Filter</h4>
-      <button>Open</button>
+      <h4>Filter Vehicles</h4>
+      <button class="filter__btn"><i class="las la-angle-double-down"></i></button>
     </div>
     <!-- Filter Form -->
     <?php get_template_part( 'components/filter' ); ?>
