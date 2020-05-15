@@ -5,6 +5,10 @@
     align-items: center;
     padding: 0 3rem;
   }
+  &__title {
+    color: $color-font-darker;
+    margin-bottom: 1rem;
+  }
   &__form {
     background-color: rgba($color-white, 0.98);
     width: 100%;
@@ -21,6 +25,59 @@
   &__container {
     display: flex;
     flex-direction: column;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &__label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  & .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 3px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &__label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  &__label input:checked ~ .checkmark {
+    background-color: $color-primary;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  &__label input:checked ~ .checkmark:after {
+    display: block;
   }
 
   &__btn {

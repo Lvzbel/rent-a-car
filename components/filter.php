@@ -14,13 +14,14 @@ foreach ($terms as $term) :
 
 ?>
 
-    <label>
+    <label class="filter__label">
 
       <input type="checkbox" name="trans[]" value="<?php echo $term->slug; ?>" <?php checked(
   (isset($_GET['trans']) && in_array($term->slug, $_GET['trans']))
 ) ?> />
 
       <?php echo $term->name; ?>
+      <span class="checkmark"></span>
 
     </label>
 
@@ -73,13 +74,14 @@ foreach ($terms as $term) :
 
 ?>
 
-    <label>
+    <label class="filter__label">
 
       <input type="checkbox" name="drive[]" value="<?php echo $term->slug; ?>" <?php checked(
   (isset($_GET['drive']) && in_array($term->slug, $_GET['drive']))
 ) ?> />
 
       <?php echo $term->name; ?>
+      <span class="checkmark"></span>
 
     </label>
 
@@ -100,13 +102,14 @@ foreach ($terms as $term) :
 
 ?>
 
-    <label>
+    <label class="filter__label">
 
       <input type="checkbox" name="type[]" value="<?php echo $term->slug; ?>" <?php checked(
   (isset($_GET['type']) && in_array($term->slug, $_GET['type']))
 ) ?> />
 
       <?php echo $term->name; ?>
+      <span class="checkmark"></span>
 
     </label>
 
