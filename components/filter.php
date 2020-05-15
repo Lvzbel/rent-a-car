@@ -1,4 +1,4 @@
-<form method="GET" class="filter__form">
+<form method="GET" class="filter__form filter__form-hide">
 
   <!-- Transmission Type -->
   <div class="filter__container">
