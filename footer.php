@@ -32,13 +32,13 @@
 
     <div class="footer__social">
       <ul>
-        <li><a target="_blank" rel="opener" href="<?php the_field('instagram') ?>"><i class="lab la-instagram"></i><span
-              class="u-sr-only">instagram</span></a>
+        <li><a target="_blank" rel="noopener" href="<?php the_field('instagram') ?>"><i
+              class="lab la-instagram"></i><span class="u-sr-only">instagram</span></a>
         </li>
-        <li><a target="_blank" rel="opener" href="<?php the_field('facebook') ?>"><i class="lab la-facebook-f"></i><span
-              class="u-sr-only">facebook</span></a>
+        <li><a target="_blank" rel="noopener" href="<?php the_field('facebook') ?>"><i
+              class="lab la-facebook-f"></i><span class="u-sr-only">facebook</span></a>
         </li>
-        <li><a target="_blank" rel="opener" href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i><span
+        <li><a target="_blank" rel="noopener" href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i><span
               class="u-sr-only">twitter</span></a></li>
       </ul>
     </div>
@@ -49,7 +49,7 @@
 
         $number = get_sub_field('whatsapp_number');
         ?>
-        <li><a target="_blank" rel="opener"
+        <li><a target="_blank" rel="noopener"
             href="https://api.whatsapp.com/send?phone=+<?php echo sanitizePhoneNumber($number) ?>"><i
               class="lab la-whatsapp"></i><?= $number; ?></a></li>
         <?php endwhile; ?>
