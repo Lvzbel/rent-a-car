@@ -200,3 +200,10 @@ add_filter( 'excerpt_length', function($length) {
     register_taxonomy('type', ['rentacar_autos'], $args);
 }
 add_action('init', 'rentacar_autos_taxonomies');
+
+// Utility classes
+function sanitizePhoneNumber($number) {
+  $find = array(' ', '(', ')', '-');
+  
+  return str_replace($find, '', $number);
+};
