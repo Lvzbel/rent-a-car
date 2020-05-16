@@ -20,24 +20,36 @@
           wp_nav_menu( $args );
         ?>
 
+    <?php 
+      $args = array(
+        'post_type' => 'rentacar_contacts',
+        'post_per_page' => 1
+      );
+
+      $contact = new WP_Query($args);
+
+      while($contact->have_posts()): $contact->the_post(); ?>
+
     <div class="footer__social">
       <ul>
-        <li><a href="#"><i class="lab la-instagram"></i></a></li>
-        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
-        <li><a href="#"><i class="lab la-twitter"></i></a></li>
+        <li><a href="<?php the_field('instagram') ?>"><i class="lab la-instagram"></i></a></li>
+        <li><a href="<?php the_field('facebook') ?>"><i class="lab la-facebook-f"></i></a></li>
+        <li><a href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i></a></li>
       </ul>
     </div>
 
     <div class="footer__phone">
       <ul>
-        <li><a href="https://api.whatsapp.com/send?phone=15551234567"><i class="lab la-whatsapp"></i>(503)
-            7324-1995</a></li>
-        <li> <a href="https://api.whatsapp.com/send?phone=15551234567"><i class="lab la-whatsapp"></i>(503)
-            7113-6357</a>
-        </li>
+        <?php  while ( have_rows('whatsapp') ) : the_row();
+
+        $number = get_sub_field('whatsapp_number');
+        ?>
+        <li><a href="https://api.whatsapp.com/send?phone=+<?php echo sanitizePhoneNumber($number) ?>"><i
+              class="lab la-whatsapp"></i><?= $number; ?></a></li>
+        <?php endwhile; ?>
       </ul>
     </div>
-
+    <?php endwhile; wp_reset_postdata(); ?>
     <div class="footer__copyright">
       <?php
     function currentYear(){
