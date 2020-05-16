@@ -9,8 +9,8 @@
     <span class="cta__lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
   </h1>
   <div class="cta__btn-container">
-    <a class="btn btn--primary cta__btn" href="#">View our Inventory</a>
-    <a href="#" class="btn btn--primary cta__btn">Contact Us</a>
+    <a class="btn btn--primary cta__btn" href="<?php echo site_url('/autos') ?>">View our Inventory</a>
+    <a href="<?php echo site_url('/contact') ?>" class="btn btn--primary cta__btn">Contact Us</a>
   </div>
 
 </section>
