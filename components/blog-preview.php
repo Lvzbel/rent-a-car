@@ -15,6 +15,6 @@
       <?php the_tags(); ?>
     </div>
     <a href="<?php the_permalink() ?>" class="blog__link"><i class="las la-file-alt blog__link-icon"></i>Read
-      More</a>
+      More<span class="u-sr-only"> about <?php the_title(); ?></span></a>
   </div>
 </div>
