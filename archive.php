@@ -1,11 +1,23 @@
 <?php get_header(); ?>
+<section class="home u-section-spacing">
+  <div class="container">
+    <h1 class="home__title"><?php if (is_tag()) {
+      echo "Category: "; single_tag_title();
+    } 
+    if (is_author()) {
+      echo "Posts by "; the_author();
+    } ?></h1>
 
-<?php while(have_posts()): the_post(); ?>
+    <div class="home__content">
+      <?php while(have_posts()): the_post(); ?>
 
-<h1><?php the_title(); ?></h1>
+      <?php get_template_part('components/blog-preview') ?>
 
-<div><?php the_content(); ?></div>
-
-<?php endwhile; ?>
+      <?php endwhile; ?>
+    </div>
+  </div>
+  <!-- Pagination -->
+  <?php get_template_part('components/pagination') ?>
+</section>
 
 <?php get_footer(); ?>

@@ -1,0 +1,19 @@
+.home {
+  &__title {
+    font-weight: 300;
+    color: $color-primary;
+    font-size: 4.8rem;
+    margin-bottom: 5rem;
+  }
+  &__content {
+    @include respond(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  & .blog__item {
+    flex-basis: calc(33.3% -3rem);
+  }
+}
