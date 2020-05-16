@@ -25,7 +25,7 @@
 
         $number = get_sub_field('whatsapp_number');
         ?>
-      <li class="cta__number"><a target="_blank" rel="opener"
+      <li class="cta__number"><a target="_blank" rel="noopener"
           href="https://api.whatsapp.com/send?phone=+<?php echo sanitizePhoneNumber($number) ?>"><i
             class="lab la-whatsapp"></i><?= $number; ?></a></li>
       <?php endwhile; ?>
