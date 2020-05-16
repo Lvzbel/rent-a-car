@@ -20,7 +20,7 @@
           </span>Rent-A-Car
         </a>
         <!-- Toggle Button -->
-        <button class="nav-toggle">
+        <button aria-label="Menu" class="nav-toggle">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
