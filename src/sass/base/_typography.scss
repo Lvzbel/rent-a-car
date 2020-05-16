@@ -3,3 +3,12 @@ body {
   letter-spacing: 1px;
   font-size: $default-font-size;
 }
+
+.header {
+  &__secondary {
+    color: $color-primary;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+}
