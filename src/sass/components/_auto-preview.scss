@@ -43,14 +43,28 @@
     }
   }
 
+  &__price-box {
+    display: flex;
+  }
+
   &__price {
     font-size: 3.1rem;
     color: $color-black;
+
+    &--sale {
+      color: red;
+      margin-left: 2rem;
+    }
+  }
+
+  &__old-price {
+    text-decoration: line-through;
   }
 
   &__perday {
     font-size: 1.8rem;
     color: $color-font-darker;
+    text-decoration: none;
   }
 
   &__type {

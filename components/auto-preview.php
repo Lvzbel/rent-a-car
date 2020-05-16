@@ -6,12 +6,36 @@
     </a>
     <div class="auto-preview__info">
 
-      <h4 class="auto-preview__price">
-        $<?php the_field('price') ?>
-        <span class="auto-preview__perday">
-          / day
-        </span>
-      </h4>
+      <div class="auto-preview__price-box">
+        <!-- If NOT on sale -->
+        <?php if(!get_field('promo')): ?>
+        <h4 class="auto-preview__price">
+          $<?php the_field('price') ?>
+          <span class="auto-preview__perday">
+            / day
+          </span>
+        </h4>
+        <?php else: ?>
+        <!-- If on sale display both prices old and new -->
+        <!-- Old Price -->
+        <h4 class="auto-preview__price">
+          <span class="auto-preview__old-price">
+            $<?php the_field('price') ?>
+          </span>
+          <span class="auto-preview__perday">
+            / day
+          </span>
+        </h4>
+
+        <!-- Sale Price -->
+        <h4 class="auto-preview__price auto-preview__price--sale">
+          $<?php the_field('promo_price') ?>
+          <span class="auto-preview__perday">
+            / day
+          </span>
+        </h4>
+        <?php endif; ?>
+      </div>
       <div class="auto-preview__type">
         <?php echo get_field('car_type')->name; ?>
       </div>
