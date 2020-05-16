@@ -66,6 +66,24 @@ add_filter( 'excerpt_length', function($length) {
 				'singular_name' => 'Auto',
 				'archives' => 'autos'
 			)
+    ));
+    
+    register_post_type('rentacar_contacts', array(
+			'public' => true,
+			'menu_icon' => 'dashicons-phone',
+			'supports' => array( 'title', 'editor' ),
+			'has_archive' => false,
+			'rewrite' => array(
+				'slug' => 'contacts'
+			),
+			'labels' => array(
+				'name' => 'Contacts',
+				'add_new_item' => 'Add New Contact',
+				'edit_item' => 'Edit Contact',
+				'all_items' => 'All Contacts',
+				'singular_name' => 'Contact',
+				'archives' => 'contacts'
+			)
 		));
 	}
 
