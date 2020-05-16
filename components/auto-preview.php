@@ -29,12 +29,12 @@
         </h4>
 
         <!-- Sale Price -->
-        <h4 class="auto-preview__price auto-preview__price--sale">
+        <h5 class="auto-preview__price auto-preview__price--sale">
           $<?php the_field('promo_price') ?>
           <span class="auto-preview__perday">
             / day
           </span>
-        </h4>
+        </h5>
         <?php endif; ?>
       </div>
       <div class="auto-preview__type">
