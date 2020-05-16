@@ -2,6 +2,7 @@
 
   <div class="auto-preview__auto">
     <a class="auto-preview__image" href="<?php the_permalink(); ?>">
+      <span class="u-sr-only"><?php the_title(); ?></span>
       <?php the_post_thumbnail('auto_img'); ?>
     </a>
     <div class="auto-preview__info">
