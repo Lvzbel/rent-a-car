@@ -32,11 +32,14 @@
 
     <div class="footer__social">
       <ul>
-        <li><a target="_blank" rel="opener" href="<?php the_field('instagram') ?>"><i class="lab la-instagram"></i></a>
+        <li><a target="_blank" rel="opener" href="<?php the_field('instagram') ?>"><i class="lab la-instagram"></i><span
+              class="u-sr-only">instagram</span></a>
         </li>
-        <li><a target="_blank" rel="opener" href="<?php the_field('facebook') ?>"><i class="lab la-facebook-f"></i></a>
+        <li><a target="_blank" rel="opener" href="<?php the_field('facebook') ?>"><i class="lab la-facebook-f"></i><span
+              class="u-sr-only">facebook</span></a>
         </li>
-        <li><a target="_blank" rel="opener" href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i></a></li>
+        <li><a target="_blank" rel="opener" href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i><span
+              class="u-sr-only">twitter</span></a></li>
       </ul>
     </div>
 
