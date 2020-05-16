@@ -60,6 +60,9 @@
 <!-- AUTO SHOWCASE -->
 <section class="showcase u-section-spacing">
   <div class="container">
+    <h2 class="header__secondary">
+      Our Featured Vehicles
+    </h2>
     <div class="showcase__slider">
       <!-- Query Featured Vehicles -->
       <?php 
@@ -84,6 +87,9 @@
 
 <section class="blog u-section-spacing">
   <div class="container">
+    <h2 class="header__secondary">
+      Read about destinations in our blog
+    </h2>
     <div class="blog__row">
       <?php
         $args = array(
