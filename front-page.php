@@ -10,7 +10,28 @@
   </h1>
   <div class="cta__btn-container">
     <a class="btn btn--primary cta__btn" href="<?php echo site_url('/autos') ?>">View our Inventory</a>
-    <a href="<?php echo site_url('/contact') ?>" class="btn btn--primary cta__btn">Contact Us</a>
+    <!-- Phone -->
+    <?php 
+      $args = array(
+        'post_type' => 'rentacar_contacts',
+        'post_per_page' => 1
+      );
+
+      $contact = new WP_Query($args);
+
+      while($contact->have_posts()): $contact->the_post(); ?>
+    <ul class="cta__numbers">
+      <?php  while ( have_rows('whatsapp') ) : the_row();
+
+        $number = get_sub_field('whatsapp_number');
+        ?>
+      <li class="cta__number"><a target="_blank" rel="opener"
+          href="https://api.whatsapp.com/send?phone=+<?php echo sanitizePhoneNumber($number) ?>"><i
+            class="lab la-whatsapp"></i><?= $number; ?></a></li>
+      <?php endwhile; ?>
+    </ul>
+    <?php endwhile; wp_reset_postdata(); ?>
+    <!-- Phone -->
   </div>
 
 </section>
