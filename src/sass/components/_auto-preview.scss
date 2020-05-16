@@ -52,7 +52,7 @@
     color: $color-black;
 
     &--sale {
-      color: #f44336;
+      color: $color-danger;
       margin-left: 2rem;
     }
   }
