@@ -14,7 +14,7 @@
     <div class="container nav__container">
 
       <div class="nav__branding">
-        <a href="#" class="nav__logo">
+        <a href="<?php echo get_home_url(); ?>" class="nav__logo">
           <span class="nav__brand">
             Lucero
           </span>Rent-A-Car

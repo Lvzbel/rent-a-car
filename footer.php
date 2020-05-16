@@ -3,7 +3,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__brand-box">
-      <a href="#" class="footer__logo">
+      <a href="<?php echo get_home_url(); ?>" class="footer__logo">
         <span class="footer__brand">
           Lucero
         </span>Rent-A-Car
