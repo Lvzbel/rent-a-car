@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <?php while(have_posts()): the_post(); ?>
-
 <div class="auto">
   <div class="container">
     <h3 class="auto__title">
@@ -15,7 +14,7 @@
         <div class="auto__gallery">
           <div class="gallery auto__slider">
             <!-- Featured Image -->
-            <a href="<?php echo get_the_post_thumbnail_url(); ?>">
+            <a href="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>">
               <?php the_post_thumbnail('thumbnail'); ?>
             </a>
             <!-- Gallery Images -->
@@ -23,7 +22,7 @@
             $images = get_field('gallery');
             if( $images ): ?>
             <?php foreach( $images as $image ): ?>
-            <a href="<?php echo esc_url($image['url']); ?>">
+            <a href="<?php echo esc_url($image['sizes']["large"]); ?>">
               <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>"
                 alt="<?php echo esc_attr($image['alt']); ?>" />
             </a>
