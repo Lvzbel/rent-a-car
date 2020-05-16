@@ -28,6 +28,16 @@
       </ul>
     </div>
 
+    <div class="footer__phone">
+      <ul>
+        <li><a href="https://api.whatsapp.com/send?phone=15551234567"><i class="lab la-whatsapp"></i>(503)
+            7324-1995</a></li>
+        <li> <a href="https://api.whatsapp.com/send?phone=15551234567"><i class="lab la-whatsapp"></i>(503)
+            7113-6357</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="footer__copyright">
       <?php
     function currentYear(){
