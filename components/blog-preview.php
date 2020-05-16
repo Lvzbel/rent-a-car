@@ -1,7 +1,9 @@
 <div class="blog__item">
   <div class="blog__img-box">
     <a href="<?php the_permalink() ?>">
-      <?php the_post_thumbnail('medium_large') ?></a>
+      <span class="u-sr-only"><?php the_title(); ?></span>
+      <?php the_post_thumbnail('medium_large') ?>
+    </a>
   </div>
 
   <div class="blog__content">
