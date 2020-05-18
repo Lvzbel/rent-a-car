@@ -1,8 +1,11 @@
 .auto-preview {
   &__item {
+    &:focus {
+      outline: none;
+    }
     @include respond(md) {
-      display: flex;
-      justify-content: space-between;
+      display: flex !important;
+      justify-content: space-between !important;
     }
 
     &:not(:last-child) {
@@ -121,4 +124,12 @@
     display: flex;
     justify-content: center;
   }
+
+  // .slick-track {
+  //   display: flex !important;
+  // }
+
+  // .slick-slide {
+  //   height: inherit !important;
+  // }
 }

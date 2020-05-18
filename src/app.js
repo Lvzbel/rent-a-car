@@ -1,18 +1,35 @@
 jQuery(document).ready(function($) {
   // bxSlider
-  $(document).ready(function() {
-    $(".showcase__slider").bxSlider({
-      auto: true,
-      autoControls: true,
-      stopAutoOnClick: true,
+  // $(document).ready(function() {
+  //   $(".showcase__slider").bxSlider({
+  //     auto: true,
+  //     autoControls: true,
+  //     stopAutoOnClick: true,
+  //   });
+  // });
+  // $(document).ready(function() {
+  //   $(".auto__slider").bxSlider({
+  //     slideMargin: 6,
+  //     controls: false,
+  //   });
+  // });
+  $(".showcase__slider")
+    .slick({
+      dots: true,
+      infinite: true,
+      speed: 700,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      slidesToScroll: 1,
+    })
+    .on("setPosition", function(event, slick) {
+      const slider = document.querySelector(".slick-track");
+      // const slider = document.getElementsByClassName("slick-track");
+      const height = document.querySelector(".auto-preview__item").clientHeight;
+      slider.style.height = `${height}px`;
     });
-  });
-  $(document).ready(function() {
-    $(".auto__slider").bxSlider({
-      slideMargin: 6,
-      controls: false,
-    });
-  });
+
   // Manific Popup
   $(".gallery").each(function() {
     // the containers for all your galleries
@@ -43,3 +60,5 @@ if (filterButton) {
     filterForm.classList.toggle("filter__form-hide");
   });
 }
+
+console.log(document.querySelector(".auto-preview__item").clientHeight);

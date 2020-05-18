@@ -1,5 +1,10 @@
 .showcase {
   background: $color-background-dark;
+  & .auto-preview__item:not(:last-child) {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
   &__item {
     @include respond(md) {
       display: flex;
