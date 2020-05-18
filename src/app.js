@@ -60,5 +60,3 @@ if (filterButton) {
     filterForm.classList.toggle("filter__form-hide");
   });
 }
-
-console.log(document.querySelector(".auto-preview__item").clientHeight);
