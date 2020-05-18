@@ -35,6 +35,7 @@
   "dependencies": {
     "bxslider": "^4.2.14",
     "magnific-popup": "^1.1.0",
-    "sanitize.css": "^11.0.0"
+    "sanitize.css": "^11.0.0",
+    "slick-carousel": "^1.8.1"
   }
 }
