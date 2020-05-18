@@ -11,25 +11,6 @@
         <div class="auto__image">
           <?php the_post_thumbnail('auto_img'); ?>
         </div>
-        <div class="auto__gallery">
-          <div class="gallery auto__slider">
-            <!-- Featured Image -->
-            <a href="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>">
-              <?php the_post_thumbnail('thumbnail'); ?>
-            </a>
-            <!-- Gallery Images -->
-            <?php 
-            $images = get_field('gallery');
-            if( $images ): ?>
-            <?php foreach( $images as $image ): ?>
-            <a href="<?php echo esc_url($image['sizes']["large"]); ?>">
-              <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>"
-                alt="<?php echo esc_attr($image['alt']); ?>" />
-            </a>
-            <?php endforeach; ?>
-            <?php endif; ?>
-          </div>
-        </div>
       </div>
 
       <div class="auto__desc">
@@ -116,6 +97,26 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="auto__gallery">
+      <div class="gallery auto__slider">
+        <!-- Featured Image -->
+        <a href="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>">
+          <?php the_post_thumbnail('thumbnail'); ?>
+        </a>
+        <!-- Gallery Images -->
+        <?php 
+            $images = get_field('gallery');
+            if( $images ): ?>
+        <?php foreach( $images as $image ): ?>
+        <a href="<?php echo esc_url($image['sizes']["large"]); ?>">
+          <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>"
+            alt="<?php echo esc_attr($image['alt']); ?>" />
+        </a>
+        <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 </div>

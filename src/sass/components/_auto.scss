@@ -3,8 +3,8 @@
   padding: 5rem 0;
   &__item {
     @include respond(md) {
-      display: flex;
-      justify-content: space-between;
+      display: flex !important;
+      justify-content: space-between !important;
     }
 
     &:not(:last-child) {
@@ -121,20 +121,15 @@
     display: flex;
     justify-content: center;
   }
-  // bxSlider customization
-  & .bx-wrapper .bx-pager.bx-default-pager a {
-    background: $color-primary-light;
+  &__slider {
+    @include respond(md) {
+      display: flex;
+      width: 50%;
+    }
   }
-
-  & .bx-wrapper .bx-pager.bx-default-pager a:hover,
-  .bx-wrapper .bx-pager.bx-default-pager a.active,
-  .bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: $color-primary-dark;
-  }
-
-  & .bx-wrapper {
-    background: $color-background-dark;
-    box-shadow: none;
-    border: none;
+  & .slick-prev:before,
+  .slick-next:before {
+    color: $color-primary;
+    font-size: 2.5rem;
   }
 }

@@ -29,7 +29,18 @@ jQuery(document).ready(function($) {
       const height = document.querySelector(".auto-preview__item").clientHeight;
       slider.style.height = `${height}px`;
     });
-
+  $(".auto__slider")
+    .slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+    })
+    .on("setPosition", function(event, slick) {
+      const slider = document.querySelector(".slick-track");
+      const list = document.querySelector(".slick-list");
+      slider.style.height = "15rem";
+      list.style.height = "15rem";
+    });
   // Manific Popup
   $(".gallery").each(function() {
     // the containers for all your galleries
