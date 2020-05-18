@@ -32,8 +32,8 @@ jQuery(document).ready(function($) {
   $(".auto__slider")
     .slick({
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 1,
     })
     .on("setPosition", function(event, slick) {
       const slider = document.querySelector(".slick-track");
