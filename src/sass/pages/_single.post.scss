@@ -1,0 +1,27 @@
+.post {
+  background-color: $color-background-dark;
+
+  & img {
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-bottom: 5rem;
+
+    @include respond(md) {
+      width: 80%;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+
+    @include respond(md) {
+      width: 70%;
+    }
+  }
+  &__content > p {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}

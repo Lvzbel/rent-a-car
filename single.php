@@ -1,11 +1,22 @@
 <?php get_header(); ?>
 
-<?php while(have_posts()): the_post(); ?>
+<section class="post u-section-spacing">
 
-<h1><?php the_title(); ?></h1>
+  <div class="container">
 
-<div><?php the_content(); ?></div>
+    <?php while(have_posts()): the_post(); ?>
 
-<?php endwhile; ?>
+    <?php the_post_thumbnail('large'); ?>
+
+    <div div class="post__content">
+      <h1 class="header__secondary"><?php the_title(); ?></h1>
+      <?php the_content(); ?>
+    </div>
+
+    <?php endwhile; ?>
+
+  </div>
+
+</section>
 
 <?php get_footer(); ?>
