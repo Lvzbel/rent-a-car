@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="auto__btn">
-          <a href="<?php the_permalink(); ?>" class="btn btn--primary">Details</a>
+          <a href="<?php echo site_url('contact'); ?>" class="btn btn--primary">Call to reserve</a>
         </div>
       </div>
 
