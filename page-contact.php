@@ -47,13 +47,13 @@
         </h4>
         <ul>
           <li><a target="_blank" rel="noopener" href="<?php the_field('instagram') ?>"><i
-                class="lab la-instagram"></i><span class="u-sr-only">instagram</span></a>
+                class="lab la-instagram"></i><span>instagram</span></a>
           </li>
           <li><a target="_blank" rel="noopener" href="<?php the_field('facebook') ?>"><i
-                class="lab la-facebook-f"></i><span class="u-sr-only">facebook</span></a>
+                class="lab la-facebook-f"></i><span>facebook</span></a>
           </li>
-          <li><a target="_blank" rel="noopener" href="<?php the_field('twitter') ?>"><i class="lab la-twitter"></i><span
-                class="u-sr-only">twitter</span></a></li>
+          <li><a target="_blank" rel="noopener" href="<?php the_field('twitter') ?>"><i
+                class="lab la-twitter"></i><span>twitter</span></a></li>
         </ul>
       </div>
 

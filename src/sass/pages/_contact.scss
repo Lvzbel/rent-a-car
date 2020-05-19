@@ -71,9 +71,19 @@
   }
 
   &__social a {
-    margin: 4rem;
+    margin: 2rem;
     color: $color-primary;
     transition: all 0.2s ease-in;
+    text-decoration: none;
+
+    @include respond(md) {
+      margin: 4rem;
+    }
+  }
+
+  &__social a span {
+    font-size: 2rem;
+    color: $color-secondary;
   }
   &__social a:hover {
     color: $color-primary-light;
