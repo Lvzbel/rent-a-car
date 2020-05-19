@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
       auto: true,
       autoControls: true,
       stopAutoOnClick: true,
+      touchEnabled: false,
     });
   });
   $(document).ready(function() {
