@@ -124,4 +124,10 @@
     box-shadow: none;
     border: none;
   }
+
+  // modified only for this section
+  & .auto-preview__item {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }

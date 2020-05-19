@@ -44,3 +44,10 @@ if (filterButton) {
     filterForm.classList.toggle("filter__form-hide");
   });
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  const viewport = document.querySelector(".bx-viewport");
+  const newHeight = viewport.clientHeight - 100;
+  console.log(newHeight);
+  viewport.style.height = `${newHeight}px`;
+});
