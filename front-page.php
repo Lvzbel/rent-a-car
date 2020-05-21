@@ -5,11 +5,11 @@
 <!-- CALL TO ACTION -->
 <section class="cta">
 
-  <h1 class="cta__header"><span class="cta__brandname">Lucero</span> Rent-A-Car
-    <span class="cta__lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+  <h1 class="cta__header"><span class="cta__brandname"><?php the_field('cta_title') ?></span> Rent-A-Car
+    <span class="cta__lead"><?php the_field('cta_lead') ?></span>
   </h1>
   <div class="cta__btn-container">
-    <a class="btn btn--primary cta__btn" href="<?php echo site_url('/autos') ?>">View our Inventory</a>
+    <a class="btn btn--primary cta__btn" href="<?php echo site_url('/autos') ?>"><?php the_field('cta_button') ?></a>
     <!-- Phone -->
     <?php 
       $args = array(
