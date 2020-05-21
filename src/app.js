@@ -1,6 +1,10 @@
+const location = window.location.pathname;
+
 jQuery(document).ready(function($) {
   // Modaal
-  $(".inline").modaal();
+  if (location !== "/") {
+    $(".inline").modaal();
+  }
   // bxSlider
   $(document).ready(function() {
     $(".showcase__slider").bxSlider({
@@ -47,8 +51,11 @@ if (filterButton) {
   });
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  const viewport = document.querySelector(".bx-viewport");
-  const newHeight = viewport.clientHeight - 100;
-  viewport.style.height = `${newHeight}px`;
-});
+// Only execute in home
+if (location === "/") {
+  window.addEventListener("DOMContentLoaded", (event) => {
+    const viewport = document.querySelector(".bx-viewport");
+    const newHeight = viewport.clientHeight - 100;
+    viewport.style.height = `${newHeight}px`;
+  });
+}
