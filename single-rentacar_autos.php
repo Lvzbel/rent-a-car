@@ -122,8 +122,40 @@
 <?php endwhile; ?>
 
 <!-- Modal -->
-<div id="inline" style="display:none;">
-  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia
-    quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+<div class="modal">
+  <div id="inline" style="display:none;">
+    <div class="modaal-container__brand-box">
+      <p class="modaal-container__logo">
+        <span class="modaal-container__brand">
+          Lucero
+        </span>Rent-A-Car
+      </p>
+    </div>
+    <h3 class="modaal-container__lead">Call us to make your reservation!</h3>
+    <div class="contact__phone">
+      <?php 
+      $args = array(
+        'post_type' => 'rentacar_contacts',
+        'post_per_page' => 1
+      );
+
+      $contact = new WP_Query($args);
+
+      while($contact->have_posts()): $contact->the_post(); ?>
+
+      <ul>
+        <?php  while ( have_rows('whatsapp') ) : the_row();
+
+        $number = get_sub_field('whatsapp_number');
+        ?>
+        <li><a target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=+<?php echo sanitizePhoneNumber($number) ?>"><i
+              class="lab la-whatsapp"></i><?= $number; ?></a></li>
+        <?php endwhile; ?>
+      </ul>
+
+      <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+  </div>
 </div>
 <?php get_footer(); ?>
