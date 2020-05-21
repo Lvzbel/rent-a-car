@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="auto__btn">
-          <a href="<?php echo site_url('contact'); ?>" class="btn btn--primary">Call to reserve</a>
+          <a href="#inline" class="inline btn btn--primary">Call to reserve</a>
         </div>
       </div>
 
@@ -121,4 +121,9 @@
 </div>
 <?php endwhile; ?>
 
+<!-- Modal -->
+<div id="inline" style="display:none;">
+  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia
+    quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
 <?php get_footer(); ?>

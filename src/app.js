@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+  // Modaal
+  $(".inline").modaal();
   // bxSlider
   $(document).ready(function() {
     $(".showcase__slider").bxSlider({

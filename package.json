@@ -36,6 +36,7 @@
     "bxslider": "^4.2.14",
     "line-awesome": "^1.3.0",
     "magnific-popup": "^1.1.0",
+    "modaal": "^0.4.4",
     "sanitize.css": "^11.0.0"
   }
 }
