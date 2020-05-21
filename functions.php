@@ -7,8 +7,7 @@ function add_theme_scripts() {
   // Google Fonts
   wp_enqueue_style( 'google_fonts','https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap', array(), '1.0.0', 'all');
   // Line Awesome Icons
-  wp_enqueue_style( 'line_awesome_all','https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css', array(), '1.3.0', 'all');
-  wp_enqueue_style( 'line_awesome_min','https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css', array(), '1.3.0', 'all');
+  wp_enqueue_style( 'line_awesome', get_template_directory_uri() .'/node_modules/line-awesome/dist/line-awesome/css/line-awesome.css', array(), '1.3.0', 'all');
   // bxSlider CSS
   wp_enqueue_style( 'bxSlider_css', get_template_directory_uri() . '/node_modules/bxslider/dist/jquery.bxslider.css', array(), '4.2.14', 'all');
   // bxSlider Script
