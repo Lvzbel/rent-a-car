@@ -1,0 +1,38 @@
+.about {
+  background-color: $color-background-dark;
+
+  & h1 {
+    margin-bottom: 0;
+  }
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+  }
+
+  &__title {
+    flex-basis: 100%;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: $color-primary-dark;
+    font-weight: 400;
+  }
+
+  &__img {
+    flex-basis: calc(50% - 3rem);
+
+    & img {
+      border-radius: 3px;
+    }
+  }
+
+  &__text {
+    flex-basis: calc(50% - 3rem);
+
+    & p {
+      margin-bottom: 2rem;
+    }
+  }
+}
