@@ -13,6 +13,8 @@ function add_theme_scripts() {
   // bxSlider Script
   wp_enqueue_script( 'bxSlider_script', get_template_directory_uri() . '/node_modules/bxslider/dist/jquery.bxslider.min.js', array ('jquery'), '4.2.14', true);
 
+  // NOT LOADED IN HOME PAGE
+  if(!is_front_page()):
   // Magnific Popup
   wp_enqueue_style( 'magnific_css', get_template_directory_uri() . '/node_modules/magnific-popup/dist/magnific-popup.css', array(), '1.1.0', 'all');
   wp_enqueue_script( 'manific_script', get_template_directory_uri() . '/node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', array ('jquery'), '1.1.0', true);
@@ -20,7 +22,7 @@ function add_theme_scripts() {
   // Modaal
   wp_enqueue_style( 'modaal_css', get_template_directory_uri() . '/node_modules/modaal/dist/css/modaal.min.css', array(), '0.4.4', 'all');
   wp_enqueue_script( 'modaal', get_template_directory_uri() . '/node_modules/modaal/dist/js/modaal.min.js', array ('jquery'), '0.4.4', true);
-
+  endif;
   // Custom Styles CSS
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/dist/app.css', array('vendor_styles'), '1.0.0', 'all');
   // Cusom JavaScript
