@@ -48,6 +48,5 @@ if (filterButton) {
 window.addEventListener("DOMContentLoaded", (event) => {
   const viewport = document.querySelector(".bx-viewport");
   const newHeight = viewport.clientHeight - 100;
-  console.log(newHeight);
   viewport.style.height = `${newHeight}px`;
 });
