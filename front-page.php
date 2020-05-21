@@ -41,38 +41,17 @@
   <div class="container">
     <div class="services__row">
 
+      <?php while ( have_rows('services') ) : the_row(); ?>
       <div class="services__service">
         <div class="services__icon-box"
           style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
-          <i class="las la-plane-arrival services__icon"></i></div>
+          <i class="<?php the_sub_field('icon') ?> services__icon"></i></div>
         <h3 class="services__title">
-          Airport Delivery
+          <?php the_sub_field('title') ?>
         </h3>
-        <p class="services__lead">Lorem ipsum dolor sit amet eleifend tincidunt
-          tortor fringilla neque ut quam quis.</p>
+        <p class="services__lead"><?php the_sub_field('text') ?></p>
       </div>
-
-      <div class="services__service">
-        <div class="services__icon-box"
-          style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
-          <i class="las la-car-crash services__icon"></i></div>
-        <h3 class="services__title">
-          Fully Insured
-        </h3>
-        <p class="services__lead">Lorem ipsum dolor sit amet eleifend tincidunt
-          tortor fringilla neque ut quam quis.</p>
-      </div>
-
-      <div class="services__service">
-        <div class="services__icon-box"
-          style="background-image: url('<?php echo get_template_directory_uri() . '/src/images/stripes_background.png' ?>')">
-          <i class="las la-car-side services__icon"></i></div>
-        <h3 class="services__title">
-          Clean & Reliable
-        </h3>
-        <p class="services__lead">Lorem ipsum dolor sit amet eleifend tincidunt
-          tortor fringilla neque ut quam quis.</p>
-      </div>
+      <?php endwhile; ?>
 
     </div>
   </div>
