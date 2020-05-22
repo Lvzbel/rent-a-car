@@ -24,14 +24,14 @@
       <?php if(get_field('section_2_title')): ?>
       <div class="about__section">
         <h3 class="about__title"><?php the_field('section_2_title') ?></h3>
-        <div class="about__text">
-          <?php the_field('section_2_text') ?>
-        </div>
-        <div class="about__img">
+        <div class="about__img about__img--alt">
           <?php 
           $image = get_field('section_2_image');
           ?>
           <img src="<?php echo $image['sizes']['large'] ?>" alt="">
+        </div>
+        <div class="about__text about__text--alt">
+          <?php the_field('section_2_text') ?>
         </div>
       </div>
       <?php endif; ?>
