@@ -18,18 +18,26 @@
     margin-bottom: 3rem;
     color: $color-primary-dark;
     font-weight: 400;
+
+    order: -1;
   }
 
   &__img {
-    flex-basis: calc(50% - 3rem);
-
+    flex-basis: 100%;
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+    }
     & img {
       border-radius: 3px;
     }
   }
 
   &__text {
-    flex-basis: calc(50% - 3rem);
+    flex-basis: 100%;
+    order: 1;
+    @include respond(md) {
+      flex-basis: calc(50% - 3rem);
+    }
 
     & p {
       margin-bottom: 2rem;
