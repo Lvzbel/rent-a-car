@@ -9,7 +9,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 2rem;
+    padding: 2rem 0;
+
+    @include respond(md) {
+      padding: 5rem 2rem;
+    }
   }
 
   &__title {
@@ -24,8 +28,11 @@
 
   &__img {
     flex-basis: 100%;
+    margin-bottom: 3rem;
+
     @include respond(md) {
       flex-basis: calc(50% - 3rem);
+      margin-bottom: 0;
     }
     & img {
       border-radius: 3px;
@@ -35,6 +42,7 @@
   &__text {
     flex-basis: 100%;
     order: 1;
+
     @include respond(md) {
       flex-basis: calc(50% - 3rem);
     }
