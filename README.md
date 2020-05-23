@@ -8,6 +8,20 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 ![alt text](https://i.imgur.com/yrV2ZtH.png "Google Lighthouse Score")
 
+## Features
+
+- Ability to add a vehicle and its gallery and filter by transmission, vehicle type, drivetrain, and brand.
+
+- Minimal plugins (ACF, All in One WP Migration, Smush and W3 Total Cache)
+
+- Fast and fully responsive
+
+- Ability edit almost all the content from the site thanks to ACF
+
+- Clickable WhatsApp phone numbers
+
+- A blog to showcase tourism in Central America
+
 ## Technologies Used
 
 - [Custom starter theme](https://github.com/Lvzbel/wp_starter_theme)
@@ -21,16 +35,32 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 ## Why I choosed the following technologies
 
-UnderStrap:
-After building a theme from scratch I decided to give a starter theme a try, UnderStrap seemed like a great option.
+- Customer starter theme:
 
-ACF:
-I wanted to give the client the option to be able to edit the site easily.
+  I decided to build my own starter because I tried pre-built like Understrap but there were alot of extra files, that I did not need and this is mostly because it support WooCommerce.
+
+- ACF (Advanced Custom Fields):
+
+  Is an excelent tool to allow the end user to make edits, take advantage of taxonomies.
+
+- Sass:
+
+  Easy and simple way to keep all CSS in order.
+
+- bxSlider:
+
+  Using this tool to be able able to add a carousel typed element.
+
+- Magnific Popup
+
+  I found this library to be easy to use and light weight for easy implementation of a light box element
+
+- Modaal
+
+  Accessibility is the main reason why I picked this pluggin and only minimum css is necessary to customize.
+
+- Laravel Mix
+
+  This Webpack wrapper is included in my starter theme, but I picked it because is a fast and easy way to automate the compiling process, and include auto reload by default.
 
 ## What I learned from this project
-
-I learned to work with a starter theme, the experience was mixed. It was nice to not have to created every single page from scratch but at the same time, I had to make a lot of changes in order to make it work for me.
-
-Understrap also has a lot of extra bulk I didn't need it because it also has WooCommerce compatibility, all this extra bulk did not really need for a simple site like this.
-
-I think next time I will just develop my own starter theme to have full control over the project.
