@@ -33,7 +33,7 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 - [Modaal](https://humaan.com/modaal/)
 - [Laravel Mix (Webpack wrapper)](https://laravel-mix.com/)
 
-## Why I choosed the following technologies
+## Why I chose the following technologies
 
 - Customer starter theme:
 
@@ -65,4 +65,6 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 ## What I learned from this project
 
-Building this website was alot of especially because I had to figure out how to create custom taxonomies and how to filter post using those custom taxonomies.
+Building this website was a lot of especially because I had to figure out how to create custom taxonomies and how to filter posts using those custom taxonomies.
+
+I also put a lot of in optimizing the site, by enqueuing styles sheet and script conditionally to achieve high performance.
