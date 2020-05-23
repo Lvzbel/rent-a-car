@@ -33,7 +33,7 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 - [Modaal](https://humaan.com/modaal/)
 - [Laravel Mix (Webpack wrapper)](https://laravel-mix.com/)
 
-## Why I chose the following technologies
+## Why I picked the following technologies
 
 - Customer starter theme:
 
@@ -51,15 +51,15 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
   Using this tool to be able able to add a carousel typed element.
 
-- Magnific Popup
+- Magnific Popup:
 
   I found this library to be easy to use and lightweight for easy implementation of a lightbox element
 
-- Modaal
+- Modaal:
 
   Accessibility is the main reason why I picked this plugin and only minimum CSS is necessary to customize.
 
-- Laravel Mix
+- Laravel Mix:
 
   This Webpack wrapper is included in my starter theme, but I picked it because it is a fast and easy way to automate the compiling process, and include auto-reload by default.
 
