@@ -37,15 +37,15 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 - Customer starter theme:
 
-  I decided to build my own starter because I tried pre-built like Understrap but there were alot of extra files, that I did not need and this is mostly because it support WooCommerce.
+  I decided to build my own starter because I tried pre-built like Understrap but there were alot of extra files, that I did not need and this is mostly because it supports WooCommerce.
 
 - ACF (Advanced Custom Fields):
 
-  Is an excelent tool to allow the end user to make edits, take advantage of taxonomies.
+  It is an excellent tool to allow the end-user to make edits, take advantage of taxonomies.
 
 - Sass:
 
-  Easy and simple way to keep all CSS in order.
+  An easy and simple way to keep all CSS in order.
 
 - bxSlider:
 
@@ -53,14 +53,14 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 - Magnific Popup
 
-  I found this library to be easy to use and light weight for easy implementation of a light box element
+  I found this library to be easy to use and lightweight for easy implementation of a lightbox element
 
 - Modaal
 
-  Accessibility is the main reason why I picked this pluggin and only minimum css is necessary to customize.
+  Accessibility is the main reason why I picked this plugin and only minimum CSS is necessary to customize.
 
 - Laravel Mix
 
-  This Webpack wrapper is included in my starter theme, but I picked it because is a fast and easy way to automate the compiling process, and include auto reload by default.
+  This Webpack wrapper is included in my starter theme, but I picked it because it is a fast and easy way to automate the compiling process, and include auto-reload by default.
 
 ## What I learned from this project
