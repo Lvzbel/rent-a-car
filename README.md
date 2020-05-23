@@ -64,3 +64,5 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
   This Webpack wrapper is included in my starter theme, but I picked it because it is a fast and easy way to automate the compiling process, and include auto-reload by default.
 
 ## What I learned from this project
+
+Building this website was alot of especially because I had to figure out how to create custom taxonomies and how to filter post using those custom taxonomies.
