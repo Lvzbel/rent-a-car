@@ -6,7 +6,7 @@ This project is a Wordpress theme developed for a rent-a-car bussiness based in 
 
 ## Google Lighthouse Score
 
-![alt text](https://i.imgur.com/yrV2ZtH.png "Google Lighthouse Score")
+![alt text](https://i.imgur.com/pZqOuYk.png "Google Lighthouse Score")
 
 ## Features
 
