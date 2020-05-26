@@ -2,7 +2,7 @@
 
 This project is a Wordpress theme developed for a rent-a-car bussiness based in Central America
 
-### [Click for Live Demo](https://rcoto.club/)
+### [Click for Live Demo](https://rentacar.rodrigocoto.com/)
 
 ## Google Lighthouse Score
 
